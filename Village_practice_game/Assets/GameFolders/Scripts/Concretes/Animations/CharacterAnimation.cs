@@ -19,7 +19,7 @@ namespace Village_practice_game.Animation
     {
         if(_animator.GetFloat("Speed_f") == moveSpeed) return;    
 
-            _animator.SetFloat("Speed_f",moveSpeed);
+            _animator.SetFloat("Speed_f",moveSpeed,0.1f,Time.deltaTime);
         
     }
 

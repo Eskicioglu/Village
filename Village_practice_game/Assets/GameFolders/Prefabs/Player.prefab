@@ -126,6 +126,7 @@ Transform:
   - {fileID: 855260516209440741}
   - {fileID: 2868339565863226273}
   - {fileID: 9159599139327901079}
+  - {fileID: 2064396620570649240}
   m_Father: {fileID: 2010886017354577525}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -475,10 +476,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2064396620570649240}
   - {fileID: 710460116149359108}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3299837563948590155
 MonoBehaviour:
@@ -493,8 +493,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _moveSpeed: 5
-  _rotateSpeed: 10
-  _turnTransform: {fileID: 0}
+  _turnSpeed: 10
+  _turnTransform: {fileID: 9159599139327901079}
 --- !u!114 &2343423551904354699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -537,6 +537,23 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 94fed9ed-6a66-400a-bc4e-21f75d06aaa1
     m_ActionName: OnFoot/Movement[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3792626827405757662}
+        m_TargetAssemblyTypeName: Village_practice_game.Abstracts.Inputs.InputReader,
+          Assembly-CSharp
+        m_MethodName: OnRotator
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 828d1107-7e3d-4d33-b134-1da7c2cbe88d
+    m_ActionName: OnFoot/Rotator[/Mouse/delta]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: OnFoot
@@ -1439,7 +1456,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7076139064242199955}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1449,7 +1466,7 @@ Transform:
   - {fileID: 9037250510780286713}
   - {fileID: 4016615166948566051}
   - {fileID: 1605702771006603261}
-  m_Father: {fileID: 2010886017354577525}
+  m_Father: {fileID: 710460116149359108}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &5127874713047773554
