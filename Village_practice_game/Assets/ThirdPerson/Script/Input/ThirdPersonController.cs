@@ -23,7 +23,6 @@ public class ThirdPersonController : MonoBehaviour
     [SerializeField]
     private Camera playerCamera;
     private Animator animator;
-
     private void Awake()
     {
         rb = this.GetComponent<Rigidbody>();
@@ -45,7 +44,6 @@ public class ThirdPersonController : MonoBehaviour
         playerActionsAsset.Player.Attack.started -= DoAttack;
         playerActionsAsset.Player.Disable();
     }
-
     private void FixedUpdate()
     {
         forceDirection += move.ReadValue<Vector2>().x * GetCameraRight(playerCamera) * movementForce;
@@ -116,5 +114,7 @@ public class ThirdPersonController : MonoBehaviour
     }
 
 
-//----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
 }
